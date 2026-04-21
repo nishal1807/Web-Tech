@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Explore Tirunelveli</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Internal CSS -->
+    <style>
+        .about {
+            background: white;
+            padding: 15px;
+            width: 80%;
+            margin: auto;
+            border-radius: 10px;
+        }
+
+        .footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Inline CSS -->
+    <h1 style="text-align:center; background-color:#00b894; color:white;">
+        EXPLORE TIRUNELVELI 🏙️
+    </h1>
+
+    <div class="about">
+        <p>
+            Tirunelveli is a historic city in Tamil Nadu, famous for temples,
+            rivers, and Tirunelveli halwa.
+        </p>
+    </div>
+
+    <h2>Location Map</h2>
+
+    <!-- Embedded Google Map -->
+    <center>
+        <iframe
+            src="https://www.google.com/maps?q=tirunelveli&output=embed"
+            width="600"
+            height="400"
+            style="border:4px solid black;"
+            loading="lazy">
+        </iframe>
+    </center>
+
+    <h2>Interactive Tirunelveli Zones</h2>
+    <p style="text-align:center;">Click on highlighted areas 👇</p>
+
+    <!-- Image Map -->
+    <center>
+        <img src="tirunelveli-map.jpg "
+             usemap="#tirunelveli"
+             width="300"
+             class="zone-map">
+
+        <map name="tirunelveli">
+            <area shape="rect" coords="100,80,220,160"
+                  href="https://en.wikipedia.org/wiki/Tirunelveli"
+                  target="_blank"
+                  title="Tirunelveli City">
+
+            <area shape="rect" coords="260,180,380,260"
+                  href="https://en.wikipedia.org/wiki/Palayamkottai"
+                  target="_blank"
+                  title="Palayamkottai">
+        </map>
+    </center>
+
+    <h2>Learn More (Frame)</h2>
+
+    <!-- Frame -->
+    <iframe
+        src="https://en.wikipedia.org/wiki/Tirunelveli"
+        width="100%"
+        height="300">
+    </iframe>
+
+    <div class="footer">
+        <p>Contact: 9876543210</p>
+        <p>Email: sample@gmail.com</p>
+        <a href="https://www.google.com/search?q=tirunelveli" target="_blank">Google</a> |
+        <a href="https://en.wikipedia.org/wiki/Tirunelveli" target="_blank">Wikipedia</a>
+        <p>© Tirunelveli Guide 2026</p>
+    </div>
+
+</body>
+</html>

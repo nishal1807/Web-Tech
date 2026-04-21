@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome</title>
+<style>
+body{
+margin:0;
+font-family:Arial, sans-serif;
+background:black;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+color:white;
+}
+.card{
+background:#111;
+padding:60px;
+border-radius:15px;
+text-align:center;
+box-shadow:0 0 25px rgba(255,255,255,0.2);
+}
+h1{
+font-size:32px;
+}
+</style>
+</head>
+<body>
+
+<div class="card">
+<h1 id="welcomeText"></h1>
+</div>
+
+<script>
+let name=localStorage.getItem("firstname");
+document.getElementById("welcomeText").innerText=
+"Welcome "+name+" 🎉";
+</script>
+
+</body>
+</html>

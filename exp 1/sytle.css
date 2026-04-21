@@ -1,0 +1,25 @@
+body {
+    background-color: powderblue;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+h2 {
+    text-align: center;
+    color: darkblue;
+}
+
+.zone-map {
+    border: 5px dashed black;
+    margin: 15px;
+}
+
+a {
+    color: aqua;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    color: yellow;
+}

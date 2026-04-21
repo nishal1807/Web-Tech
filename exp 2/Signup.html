@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sign Up</title>
+<style>
+body{
+margin:0;
+font-family:Arial, sans-serif;
+background:black;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+color:white;
+}
+.card{
+background:#111;
+padding:35px;
+width:350px;
+border-radius:15px;
+text-align:center;
+box-shadow:0 0 20px rgba(255,255,255,0.15);
+}
+h2{
+margin-bottom:15px;
+}
+input{
+width:100%;
+padding:12px;
+margin:8px 0;
+border-radius:8px;
+border:none;
+outline:none;
+background:#222;
+color:white;
+}
+input::placeholder{
+color:#aaa;
+}
+button{
+width:100%;
+padding:12px;
+background:white;
+color:black;
+border:none;
+border-radius:8px;
+cursor:pointer;
+font-weight:bold;
+margin-top:10px;
+}
+button:hover{
+background:#ddd;
+}
+</style>
+</head>
+<body>
+
+<div class="card">
+<h2>Create Account</h2>
+
+<input type="text" id="fname" placeholder="First Name" required>
+<input type="text" id="lname" placeholder="Last Name" required>
+<input type="email" id="email" placeholder="Email" required>
+<input type="tel" id="contact" placeholder="Contact Number" required>
+<input type="date" id="dob" required>
+<input type="password" id="password" placeholder="Password" required>
+
+<button onclick="signup()">Sign Up</button>
+</div>
+
+<script>
+function signup(){
+let fname=document.getElementById("fname").value;
+let email=document.getElementById("email").value;
+let password=document.getElementById("password").value;
+
+localStorage.setItem("firstname",fname);
+localStorage.setItem("email",email);
+localStorage.setItem("password",password);
+
+window.location.href="welcome.html";
+}
+</script>
+
+</body>
+</html>
